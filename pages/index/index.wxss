@@ -1,0 +1,46 @@
+.container {
+  height: 100vh;
+  background: #eee;
+}
+
+.container .hotItem {
+  padding: 0 30rpx;
+  margin-bottom: 10px;
+  background: white;
+}
+.scrollItem {
+  background: #eee;
+}
+.container .smalltitle {
+  display: flex;
+  font-size: 14px;
+  padding: 10rpx 0;
+  color: rgb(161, 157, 157);
+  justify-content: space-between;
+}
+.container .smalltitle .username {
+  font-size: 13px;
+  padding: 6px 0 2px 0;
+  color: rgb(150, 150, 150);
+}
+.name {
+  padding: 10px 0;
+  font-size: 15px;
+}
+.content {
+  font-size: 13px;
+}
+.comments {
+  padding: 6px 0;
+}
+.comments .items {
+  display: inline-block;
+  text-align: center;
+  padding-right: 20px;
+  font-size: 14px;
+}
+.oimg {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: top;
+}

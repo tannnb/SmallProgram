@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "发现",
+  "usingComponents": {
+    "van-icon": "../../miniprogram_npm/vant-weapp/icon/index",
+    "small-list": "/components/small-list/index",
+    "van-search": "../../miniprogram_npm/vant-weapp/search/index"
+  }
+}

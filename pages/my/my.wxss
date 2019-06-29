@@ -1,0 +1,77 @@
+.container {
+  height: 100vh;
+  padding-top: 20rpx;
+  background: #eeeef2;
+}
+.userwrapper {
+  display: flex;
+  margin: 10rpx 0;
+  padding: 30rpx;
+  background: white;
+}
+.userwrapper .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: #ccc;
+}
+.userwrapper .username {
+  flex: 1;
+  align-self: center;
+  padding-left: 20rpx;
+}
+.userwrapper .username .name {
+}
+.userwrapper .username .desc {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.userwrapper .right {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100rpx;
+}
+.userwrapper .right .image {
+  width: 30rpx;
+  height: 120rpx;
+}
+.card {
+  margin-top: 14px;
+}
+.card .item {
+  display: flex;
+  border-top: 1px solid #eff1f3;
+  border-bottom: 1px solid #eff1f3;
+  margin-top: -1rpx;
+  background: white;
+}
+.card .title {
+  flex: 1;
+  line-height: 50rpx;
+  padding: 20rpx 40rpx;
+}
+.card .count {
+  width: 180rpx;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 20rpx;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.card .title .icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 30rpx;
+}
+.card .title .message {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.card .icon {
+  width: 50rpx;
+  height: 50rpx;
+}

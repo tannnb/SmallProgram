@@ -1,0 +1,53 @@
+.container {
+  min-height: 100vh;
+}
+.scrollItem {
+  height: 100vh;
+}
+.scroll-wrapper {
+  display: flex;
+  padding: 16rpx 24rpx;
+  border-bottom: 1px solid rgb(235, 234, 234);
+}
+.xiaoceImg {
+  width: 52px;
+  height: 78px;
+  background: rgb(235, 235, 235);
+}
+.xiaoceAvatar {
+  width: 52px;
+  height: 78px;
+}
+.xiaoceinfo {
+  flex: 1;
+  padding-left: 16rpx;
+  font-weight: 700;
+}
+.desc {
+  font-size: 30rpx;
+}
+.username {
+  font-size: 22rpx;
+  color: #000;
+}
+.buyCount {
+  font-size: 24rpx;
+  color: #bbbbbb;
+}
+.money {
+  align-self: center;
+  min-width: 90rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  border-radius: 100rpx;
+  background-color: #f0f7ff;
+  font-size: 26rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #07f;
+  position: relative;
+  z-index: 2;
+}

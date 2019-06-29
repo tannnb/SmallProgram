@@ -1,0 +1,14 @@
+.hotListWrapper {
+  padding: 20rpx 40rpx;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+.hotListWrapper .title {
+  padding-bottom: 20rpx;
+  font-size: 34rpx;
+}
+.hotListWrapper .desc {
+  color: #9c9c9c;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+}

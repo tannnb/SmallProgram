@@ -1,0 +1,28 @@
+<!-- index.wxml -->
+<wxs module='filters' src='../../filter/filter.wxs' />
+<view class="container">
+    <van-tabs z-index="100" sticky="true" wx:if="{{navComment && navComment.length > 0}}" active="{{active}}" bind:change="onChange">
+        <van-tab wx:if="{{item.name}}" wx:for="{{navComment}}" wx:key="{{item.id}}" data-source="{{item}}" category="{{item.category}}" title="{{item.name}}"></van-tab>
+    </van-tabs>
+    <scroll-view scroll-y="true" wx:if="{{hotRecomment && hotRecomment.length > 0}}" class='scrollItem'>
+        <view data-source="{{item}}" bind:tap="handleItem" class="hotItem" wx:for='{{hotRecomment}}' wx:for-item="item" wx:key='{{item.objectId}}'>
+            <view class="smalltitle">
+                <view class="username">
+                    {{item.user.username}}·{{item.category.name}}·{{filters.timeBefore(item.createdAt)}}
+                </view>
+                <view class="jobtitle">{{item.user.jobTitle}}</view>
+            </view>
+            <view class="name">{{item.title}}</view>
+            <view class="comments">
+                <view class="items">
+                    <image class='oimg' mode="widthFix" src='/img/zan_grey_feidian3.png'></image>
+                    {{item.likeCount}}
+                </view>
+                <view class="items">
+                    <image class='oimg' mode="widthFix" src='/img/fd_reply.png'></image>
+                    {{item.commentsCount}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,77 @@
+<!-- pages/my/my.wxml -->
+<view class="container">
+    <view class="userwrapper">
+        <view class="avatar"></view>
+        <view class="username" wx:if="{{userinfo && userinfo.username}}">
+            <view class="name">名称</view>
+            <view class="desc">bug制造这</view>
+        </view>
+        <view bind:tap="handleGologion" class="username" wx:else>
+            <view class="name">登录/注册</view>
+            <view class="desc">添加职位 @添加公司</view>
+        </view>
+        <view class="right">
+            <image class="image" mode='widthFix' src="../../img/profile_arrow.png" />
+        </view>
+    </view>
+    <view class='card items'>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/ic_notification.png' />
+                <view class="message">消息中心</view>
+            </view>
+            <view class='count reddot'>adasd</view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/user_liked_pin.png' />
+                <view class="message">我赞过的</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/ic_collection_set.png' />
+                <view class="message">收藏集</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/user_buy.png' />
+                <view class="message">已购小册</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/ic_heart_entry_bottom_full.png' />
+                <view class="message">我的钱包</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/view.png' />
+                <view class="message">阅读过的文章</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/tag.png' />
+                <view class="message">标签管理</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+    </view>
+    <view class='card items'>
+        <view class='item' hover-class='hover-class' data-url='/pages/infoCenter/infoCenter'>
+            <view class='title'>
+                <image class="icon" mode='widthFix' src='/img/icon_feed_back.png' />
+                <view class="message">意见反馈</view>
+            </view>
+            <view class='count reddot'></view>
+        </view>
+    </view>
+</view>

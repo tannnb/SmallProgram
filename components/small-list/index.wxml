@@ -1,0 +1,11 @@
+<wxs module='filters' src='../../filter/filter.wxs' />
+<view class='hotListWrapper' data-item='{{sourceData}}' bind:tap="handleItem">
+    <view class='title'>{{sourceData.title}}</view>
+    <view class='desc'>
+        <text>{{sourceData.likeCount}}人赞</text>
+        <text>·</text>
+        <text>{{sourceData.user.username}}</text>
+        <text>·</text>
+        <text>{{filters.timeBefore(sourceData.updatedAt)}}</text>
+    </view>
+</view>

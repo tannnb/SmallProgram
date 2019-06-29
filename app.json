@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/xiaoce/xiaoce",
+    "pages/feidian/feidian",
+    "pages/launch/launch",
+    "pages/login/login",
+    "pages/postdetail/postdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2d78f4",
+    "navigationBarTitleText": "掘金",
+    "backgroundColor": "#ffffff",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#abb4bf",
+    "selectedColor": "#3281ff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "img/tab_home_normal.png",
+        "selectedIconPath": "img/tab_home.png"
+      },
+      {
+        "pagePath": "pages/feidian/feidian",
+        "text": "动态",
+        "iconPath": "img/tab_activity_normal.png",
+        "selectedIconPath": "img/tab_activity.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "img/tab_explore_normal.png",
+        "selectedIconPath": "img/tab_explore.png"
+      },
+      {
+        "pagePath": "pages/xiaoce/xiaoce",
+        "text": "小册",
+        "iconPath": "img/tab_xiaoce_normal.png",
+        "selectedIconPath": "img/tab_xiaoce.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/tab_profile_normal.png",
+        "selectedIconPath": "img/tab_profile.png"
+      }
+    ]
+  }
+}

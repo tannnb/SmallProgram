@@ -1,0 +1,22 @@
+<view class='container'>
+    <van-tabs z-index="100" sticky="true" wx:if="{{navSource && navSource.length > 0}}" active="{{active}}" bind:change="onChange">
+        <van-tab wx:if="{{item.name}}" wx:for="{{navSource}}" wx:key="{{item.id}}" title="{{item.name}}"></van-tab>
+    </van-tabs>
+    <scroll-view scroll-y="true" wx:if="{{detailList && detailList.length > 0}}">
+        <view wx:for="{{detailList}}" wx:for-item="item" wx:key="{{item.id}}">
+            <view class='scroll-wrapper'>
+                <view class='xiaoceImg'>
+                    <image class="xiaoceAvatar" mode='widthFix' src="{{item.img}}"></image>
+                </view>
+                <view class='xiaoceinfo'>
+                    <view class='desc'>{{item.title}}</view>
+                    <view class="username">
+                        {{item.userData.username}} Lv{{item.userData.level}}
+                    </view>
+                    <view class='buyCount'>{{item.lastSectionCount}}小结 · {{item.buyCount}}已购买</view>
+                </view>
+                <view class='money'>¥{{item.price}}</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

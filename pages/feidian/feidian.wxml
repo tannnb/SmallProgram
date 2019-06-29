@@ -1,0 +1,41 @@
+<wxs module='filters' src='../../filter/filter.wxs' />
+<view class="feidianContainer">
+    <view class="conatinerItem" wx:for="{{hotRecommendList}}" wx:for-item="item" wx:key='{{item.id}}'>
+        <view class='userInfo'>
+            <view class='avatar'>
+                <image catchtap='toPersonal' mode='widthFix' src="{{item.actors.avatarLarge || '/img/default_avatar.png'}}"></image>
+            </view>
+            <view class='username'>
+                <view class='name'>{{item.actors.username}}</view>
+                <view class='jobTitle'>
+                    <text>{{item.actors.jobTitle}}</text>
+                    <text wx:if="{{item.actors.company}}">@{{item.actors.company}}</text>
+                    <text>·</text>
+                    <text>{{filters.timeBefore(item.targets.createdAt)}}</text>
+                </view>
+            </view>
+            <view class='focus'>+ 关注</view>
+        </view>
+        <view class='content'>
+            <text decode class='content-text'>{{item.targets.content}}</text>
+        </view>
+        <view class='pictures'>
+            <image class="pic" mode='widthFix' wx:for="{{item.targets.pictures}}" wx:for-item="pic" wx:key="{{idx}}" src="{{pic}}"></image>
+        </view>
+        <view wx:if='{{item.targets.topic && item.targets.topic.title}}' class='topicTitle'>
+            {{item.targets.topic.title}}
+        </view>
+        <view class='bottonTips'>
+            <view class='bottonTips-item'>
+                <image wx:if='{{item.target.viewerHasLiked}}' src='/img/zan_green_feidian3.png'></image>
+                <image wx:if='{{!item.target.viewerHasLiked}}' src='/img/zan_grey_feidian3.png'></image>
+                {{item.targets.likeCount}}
+            </view>
+            <view class='bottonTips-item'>
+                <image src='/img/fd_reply.png' />
+                {{item.targets.commentCount}}
+            </view>
+            <view class='bottonTips-item'>分享</view>
+        </view>
+    </view>
+</view>

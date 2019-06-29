@@ -1,0 +1,27 @@
+<wxs module='filters' src='../../filter/filter.wxs' />
+<view class="searchContainer">
+    <!-- <van-search class="searchFix" wx:if="scrollTop > 0" shape='round' value="{{ searchValue }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch">
+        <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
+    <van-search shape='round' value="{{ searchValue }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch">
+        <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search> -->
+    <view>
+        <swiper class="swiperCover" indicator-dots="indicatorDots" indicator-dots="true" indicator-active-color="#2d78f4" autoplay="false" circular="true" interval="5000" duration="500">
+            <swiper-item wx:for="{{imgUrls}}" wx:key="index" wx:for-item="item">
+                <image mode='widthFix' class='banner' src="{{item}}" />
+            </swiper-item>
+        </swiper>
+        <view class='hotArticle'>
+            <view class="article">
+                <van-icon class="hotIcon" name="fire-o" />
+                热门文章
+            </view>
+        </view>
+        <small-list wx:if="{{articleList && articleList.length > 0}}" wx:for="{{articleList}}" wx:for-item="item" wx:key='{{item.id}}' bind:handleTapItem="handleTapItem" source-data='{{item}}'></small-list>
+    </view>
+</view>
+<!-- <scroll-view class="searchContainer" 
+bindscrolltolower="lower"
+scroll-y bindscroll="scroll" style="height: 200px;">
+</scroll-view> -->
